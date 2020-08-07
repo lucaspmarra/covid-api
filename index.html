@@ -64,9 +64,9 @@
         <div class="uk-margin uk-card uk-card-default uk-card-body uk-width-1-2@m uk-align-center">
             <h3 class="uk-card-title">Covid - Centro de Informações</h3>
             <p>Para visualizar os dados de casos no Brasil:</p>
-            <!-- <form class="uk-margin uk-grid-small" uk-grid>
+            <form class="uk-margin uk-grid-small" uk-grid>
                 <div class="uk-width-1-2@s">
-                    <select class="uk-select" id="form-stacked-select" v-model="selected">
+                    <select class="uk-select" id="form-stacked-select" v-model="selected" >
                         <option v-for="option in options" v-bind:value="option.value">
                             {{ option.text }}
                         </option>
@@ -79,7 +79,7 @@
                         </option>
                     </select>
                 </div>
-            </form> -->
+            </form>
             <section v-if="errored">
                 <p>Pedimos desculpas, não estamos conseguindo recuperar as informações no momento. Por favor, tente
                     novamente mais tarde.</p>
