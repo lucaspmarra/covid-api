@@ -1,5 +1,4 @@
-const API_URL = 'https://covid19-brazil-api.now.sh/api/report/v1';
-
+const API_URL = 'https://covid19-brazil-api.now.sh/api/report/v1/brazil';
 new Vue({
     el: '#app',
     data() {
@@ -49,15 +48,22 @@ new Vue({
     },
     mounted() {
         this.getCases();
-        this.selectedState();
+
+    },
+    watch: {
+        selected: function () {
+            this.getCases()
+        },
     },
     methods: {
         getCases() {
+            console.log(API_URL + '/uf/'+ this.selected);
+            
             axios
-                .get(API_URL)
+                .get(API_URL + '/uf/'+ this.selected)
                 .then((response) => {
-                    this.cases_list = response.data.data;
-                    console.log(response.data.data);
+                    this.cases_list = response.data;
+                    console.log(response.data);
                 })
                 .catch(error => {
                     console.log(error)
