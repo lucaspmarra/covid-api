@@ -10,5 +10,8 @@
 - Adição do text de informação abaixo do card;
 
 ## v2.1
-
 - Select de data desativado;
+
+### To-do:
+- Dark Mode;
+- Mostrar apenas dados importates;
