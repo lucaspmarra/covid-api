@@ -6,5 +6,9 @@
 ## v2
 - Projeto retornando valores que o usuário seleciona nos campos de select;
 - Projeto também retornando todos os valores da api do respectivo Estado;
-- Ainda sem solução
+- Ainda sem solução;
 - Adição do text de informação abaixo do card;
+
+## v2.1
+
+- Select de data desativado;
