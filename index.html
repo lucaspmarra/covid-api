@@ -86,10 +86,11 @@
             </section>
             <section v-else>
                 <hr>
-                <div v-if="loading">Carregando...</div>
+                <div v-if="loading" uk-spinner></div>
 
                 <div v-else v-for="(cases, index) in cases_list" :key="index">
-                    <ul>({{cases.uf}}) Estado de {{cases.state}} com {{cases.cases}} casos e {{cases.deaths}} mortes.</ul>
+                    <ul>({{cases.uf}}) Estado de {{cases.state}} com {{cases.cases}} casos e {{cases.deaths}} mortes.
+                    </ul>
                 </div>
             </section>
         </div>
@@ -99,8 +100,6 @@
         <div class="uk-container">
 
             <h3>Informações</h3>
-
-
             <div>
                 <p>Este site não tem <strong>NENHUMA</strong> relação com o governo.</p>
             </div>
